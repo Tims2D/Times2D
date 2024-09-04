@@ -63,6 +63,8 @@ sh ./scripts/RNN.sh
 
 This project makes use of code from the following open-source projects:
 
-- **[TimesNet]([https://github.com/thuml/TimesNet](https://github.com/thuml/Time-Series-Library))** - A deep learning model for time series forecasting developed by THUML @ Tsinghua University, used under the MIT License.
+[TimesNet](https://github.com/thuml/Time-Series-Library) - A deep learning model for time series forecasting developed by THUML @ Tsinghua University, used under the MIT License.  
+[PDF](https://github.com/Hank0626/PDF) - A framework licensed under the GNU Affero General Public License Version 3 (AGPLv3). For more details, see the full [AGPLv3 License](https://www.gnu.org/licenses/agpl-3.0.html).
 
 We are grateful to the authors for their contributions to the open-source community.
+

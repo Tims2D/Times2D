@@ -1,0 +1,41 @@
+# Times2D License
+
+This project is licensed under the GNU Affero General Public License Version 3 (AGPLv3) for any code derived from the PDF, PatchTST, Crossformer, with additional components licensed under other permissive licenses as described below.
+
+## License for Times2D Code and Modifications
+
+This project contains code and modifications added by (would be added due to anonymous submission) for the Times2D framework. The code in this repository is licensed under the GNU Affero General Public License Version 3 (AGPLv3), except where otherwise stated. You may modify and distribute the code as long as you follow the terms of the AGPLv3, which ensures the source code is always available to end users.
+
+You can find the full text of the AGPLv3 here:  
+<https://www.gnu.org/licenses/agpl-3.0.html>
+
+## Third-Party Software Acknowledgements
+
+This project makes use of the following open-source projects, which are included or referenced in this repository under their respective licenses:
+
+- **[TimesNet](https://github.com/thuml/Time-Series-Library)** - Licensed under the MIT License. You may use, copy, modify, and distribute this software under the terms of the MIT License.  
+  MIT License: <https://opensource.org/licenses/MIT>
+
+- **[Autoformer](https://github.com/thuml/Autoformer)** - Licensed under the MIT License.  
+  MIT License: <https://opensource.org/licenses/MIT>
+
+- **[PatchTST](https://github.com/yuqinie98/PatchTST)** - Licensed under the MIT License.  
+  MIT License: <https://opensource.org/licenses/MIT>
+
+- **[Crossformer](https://github.com/cure-lab/Crossformer)** - Licensed under the MIT License.  
+  MIT License: <https://opensource.org/licenses/MIT>
+
+- **[Informer](https://github.com/zhouhaoyi/Informer2020)** - Licensed under the Apache License 2.0.  
+  Apache 2.0 License: <https://www.apache.org/licenses/LICENSE-2.0>
+
+## Your Rights and Responsibilities Under AGPLv3
+
+By using, modifying, or distributing this project, you agree to the terms of the AGPLv3 license, including:
+- Any modifications you make to the original code must be disclosed under the AGPLv3.
+- If you make this project available as a service over a network (e.g., a web service), you must make the source code available to all users of that service.
+
+## Additional Notes
+
+While portions of this project use third-party components under MIT and Apache 2.0 licenses, any modifications made within this repository are governed by the AGPLv3. Ensure that you respect the individual licenses of any external components when redistributing the project.
+
+For any questions or clarifications, please contact [would be added due to anonymous submission].

@@ -53,10 +53,8 @@ To set up the environment and install the required packages, follow these steps:
 To run the models, navigate to the `scripts` folder, pick the intended `.sh` file, and execute it using the following commands:
 
 ```bash
-sh ./scripts/Bilstm.sh
-sh ./scripts/Conv2DLSTM.sh
-sh ./scripts/RandomForest.sh
-sh ./scripts/RNN.sh
+sh ./scripts/Tims2D/longTerm/etth1.sh
+sh ./scripts/Tims2D/ShortTerm/M4.sh
 ```
 
 ## Acknowledgements
@@ -64,7 +62,11 @@ sh ./scripts/RNN.sh
 This project makes use of code from the following open-source projects:
 
 [TimesNet](https://github.com/thuml/Time-Series-Library) - A deep learning model for time series forecasting developed by THUML @ Tsinghua University, used under the MIT License.  
-[PDF](https://github.com/Hank0626/PDF) - A framework licensed under the GNU Affero General Public License Version 3 (AGPLv3). For more details, see the full [AGPLv3 License](https://www.gnu.org/licenses/agpl-3.0.html).
+[PDF](https://github.com/Hank0626/PDF) - A framework licensed under the GNU Affero General Public License Version 3 (AGPLv3). For more details, see the full [AGPLv3 License](https://www.gnu.org/licenses/agpl-3.0.html).  
+[Autoformer](https://github.com/thuml/Autoformer) - A model for long-term time series forecasting.  
+[PatchTST](https://github.com/yuqinie98/PatchTST) - A Transformer model for multivariate time series forecasting.  
+[Informer](https://github.com/zhouhaoyi/Informer2020) - An efficient transformer model for long sequence time-series forecasting.
 
 We are grateful to the authors for their contributions to the open-source community.
+
 

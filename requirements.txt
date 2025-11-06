@@ -9,3 +9,4 @@ tqdm==4.64.1
 sktime==0.16.1
 jupyter==1.0.0
 ipython==8.5.0
+patool==4.0.1

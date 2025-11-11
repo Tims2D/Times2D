@@ -1,42 +1,68 @@
 # Times2D
-## 📄 Paper
 
+## 📄 Paper
 Our paper describing Times2D has been accepted to **AAAI 2025** and is now available on arXiv:  
 🔗 [Times2D: Multi-Period Decomposition and Derivative Mapping for General Time Series Forecasting](https://arxiv.org/abs/2504.00118)
 
-## Overview
+---
 
-Times2D is a novel framework for time series forecasting that transforms 1D time series data into a 2D representation. This transformation enables the capture of intricate temporal variations such as multi-periodicity, sharp fluctuations, and turning points, which are challenging to model using traditional 1D methods. The model leverages advanced techniques, including Periodic Decomposition Block (PDB) and First and Second Derivative Heatmaps (FSDH), to efficiently forecast time series data across various domains.
+## 🧠 Overview
+**Times2D** is a novel framework for time series forecasting that transforms 1D time series data into a 2D representation.  
+This transformation enables the model to capture intricate temporal variations — such as multi-periodicity, sharp fluctuations, and turning points — which are challenging to model using traditional 1D approaches.
 
-## Table of Contents
-- [Times2D Architecture](#Times2D-Architecture)
+The model leverages three key modules:
+- **Periodic Decomposition Block (PDB):** Decomposes the time series via FFT to capture both short- and long-term periodic components.  
+- **First & Second Derivative Heatmaps (FSDH):** Highlights local trends, peaks, and sharp transitions.  
+- **Aggregation Forecasting Block (AFB):** Combines outputs from multiple 2D features for robust and efficient forecasting.
+
+---
+
+## 📂 Table of Contents
+- [Architecture](#architecture)
 - [Data](#data)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Repository Structure](#repository-structure)
 - [Acknowledgements](#acknowledgements)
 
+---
 
-## Times2D Architecture
-Times2D comprises three core components:
+## 🏗️ Architecture
+The Times2D framework integrates signal decomposition, derivative encoding, and efficient aggregation into a unified model for general-purpose forecasting.
 
-Periodic Decomposition Block (PDB): Uses Fast Fourier Transform (FFT) to decompose the time series into dominant periods, capturing both short-term and long-term dependencies.
-First and Second Derivative Heatmaps (FSDH): Computes first and second derivatives of the time series to highlight sharp changes and turning points in the data.
-Aggregation Forecasting Block (AFB): Aggregates the outputs of the PDB and FSDH, enabling accurate forecasting of time series data.
-## Data
-These datasets are commonly used for benchmarking time series forecasting models in academic research and competitions, covering domains like temperature, electricity, transportation, weather, and health. See the table below for details.
+**Key features:**
+- Multi-period decomposition via FFT
+- Dynamic 2D embedding through derivative mapping
+- Shared convolutional feature extraction across time-frequency axes
+- Compatibility with diverse datasets and forecasting horizons
 
-| Dataset      | Number of columns | Prediction Horizon  | Train/Validation/Test Size | Frequency | Domain       |
-|--------------|-------------------|---------------------|----------------------------|-----------|--------------|
-| ETTm1        | 7                 | {96, 192, 336, 720} | (34465, 11521, 11521)      | 15 min    | Electricity Transformer Temperature  |
-| ETTm2        | 7                 | {96, 192, 336, 720} | (34465, 11521, 11521)      | 15 min    | Electricity Transformer Temperature  |
-| ETTh1        | 7                 | {96, 192, 336, 720} | (8545, 2881, 2881)         | 1 hour    | Electricity Transformer Temperature  |
-| ETTh2        | 7                 | {96, 192, 336, 720} | (8545, 2881, 2881)         | 1 hour    | Electricity Transformer Temperature  |
-| Electricity  | 321               | {96, 192, 336, 720} | (18317, 2633, 5261)        | 1 hour    | Electricity Load Demand  |
-| Traffic      | 862               | {96, 192, 336, 720} | (12185, 1757, 3509)        | 1 hour    | Transportation|
-| Weather      | 21                | {96, 192, 336, 720} | (36792, 5271, 10540)       | 10 min    | Weather      |
+---
+
+## 📊 Data
+These datasets are commonly used for benchmarking time series forecasting models across domains such as temperature, electricity, transportation, weather, and health.
+
+| Dataset      | Columns | Prediction Horizons | Train/Val/Test | Frequency | Domain |
+|---------------|----------|---------------------|----------------|------------|--------|
+| **ETTm1** | 7 | {96,192,336,720} | (34465,11521,11521) | 15 min | Transformer Temperature |
+| **ETTm2** | 7 | {96,192,336,720} | (34465,11521,11521) | 15 min | Transformer Temperature |
+| **ETTh1** | 7 | {96,192,336,720} | (8545,2881,2881) | 1 hour | Transformer Temperature |
+| **ETTh2** | 7 | {96,192,336,720} | (8545,2881,2881) | 1 hour | Transformer Temperature |
+| **Electricity** | 321 | {96,192,336,720} | (18317,2633,5261) | 1 hour | Load Demand |
+| **Traffic** | 862 | {96,192,336,720} | (12185,1757,3509) | 1 hour | Transportation |
+| **Weather** | 21 | {96,192,336,720} | (36792,5271,10540) | 10 min | Meteorological |
+| **National Illness** | 7 | {24,36,48,60} | (616,77,52) | 1 week | Health |
+| **Exchange Rate** | 8 | {96,192,336,720} | (7588,1517,1517) | 1 day | Finance |
+| **Solar Energy** | 137 | {96,192,336,720} | (36888,5256,10512) | 10 min | Energy |
+
+---
 
 
-## Installation
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Tims2D/Times2D.git
+cd Times2D
+
+## ⚙️ Installation
 
 To set up the environment and install the required packages, follow these steps:
 
@@ -77,10 +103,20 @@ sh ./scripts/Times2D/longTerm/Times2D_national_illness.sh
 # Weather
 sh ./scripts/Times2D/longTerm/Times2D_weather.sh
 
+<<<<<<< HEAD
+=======
+# Traffic
+sh ./scripts/Times2D/longTerm/Times2D_traffic.sh
+
+>>>>>>> 2a0a41e (Save local changes before rebase)
 
 #### 🔹 Short-Term Forecasting
 
 sh ./scripts/Times2D/ShortTerm/M4.sh
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2a0a41e (Save local changes before rebase)
 ```
 
 ## Acknowledgements

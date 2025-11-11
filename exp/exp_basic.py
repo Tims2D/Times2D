@@ -1,7 +1,7 @@
 import os
 import torch
 import numpy as np
-from models import Times2D,TimesNet, PatchTST, Informer, Autoformer, Transformer, DLinear, Linear, NLinear
+from models import Times2D,TimesNet, PatchTST, Autoformer, Transformer, DLinear
 
 
 class Exp_Basic(object):
@@ -10,10 +10,7 @@ class Exp_Basic(object):
         self.model_dict = {
             'Autoformer': Autoformer,
             'Transformer': Transformer,
-            'Informer': Informer,
             'DLinear': DLinear,
-            'NLinear': NLinear,
-            'Linear': Linear,
             'PatchTST': PatchTST,
             'TimesNet' : TimesNet,
             'Times2D' :Times2D}

@@ -13,7 +13,7 @@ fi
 
 # Fixed parameters
 model_name=Times2D
-root_path_name=./dataset/
+root_path_name=./dataset/ETT-small/
 data_path_name=ETTh1.csv
 model_id_name=ETTh1
 data_name=ETTh1

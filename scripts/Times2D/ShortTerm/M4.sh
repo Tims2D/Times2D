@@ -35,7 +35,7 @@ python -u run.py \
   --patch_len 48 32 16 6 3\
   --des Exp \
   --lradj 'TST' \
-  --train_epochs 100 \
+  --train_epochs 1 \
   --patience 10 \
   --top_k 5 \
   --loss 'SMAPE' \
@@ -63,7 +63,7 @@ python -u run.py \
   --patch_len 48 32 16 6 3 \
   --des Exp \
   --lradj 'TST' \
-  --train_epochs 100 \
+  --train_epochs 1 \
   --patience 10 \
   --top_k 5 \
   --loss 'SMAPE' \
@@ -91,7 +91,7 @@ python -u run.py \
   --patch_len 48 32 16 6 3 \
   --des Exp \
   --lradj 'TST' \
-  --train_epochs 100 \
+  --train_epochs 1 \
   --patience 10 \
   --top_k 5 \
   --loss 'SMAPE' \

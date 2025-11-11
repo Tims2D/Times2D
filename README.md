@@ -22,7 +22,6 @@ The model leverages three key modules:
 - [Data](#data)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Repository Structure](#repository-structure)
 - [Acknowledgements](#acknowledgements)
 
 ---
@@ -31,9 +30,9 @@ The model leverages three key modules:
 The Times2D framework integrates signal decomposition, derivative encoding, and efficient aggregation into a unified model for general-purpose forecasting.
 
 **Key features:**
-- Multi-period decomposition via FFT
-- Dynamic 2D embedding through derivative mapping
-- Shared convolutional feature extraction across time-frequency axes
+- Multi-period decomposition via FFT  
+- Dynamic 2D embedding through derivative mapping  
+- Shared convolutional feature extraction across time-frequency axes  
 - Compatibility with diverse datasets and forecasting horizons
 
 ---
@@ -56,30 +55,18 @@ These datasets are commonly used for benchmarking time series forecasting models
 
 ---
 
+## ⚙️ Installation
+To set up the environment and install the required packages, follow these steps:
 
-### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/Tims2D/Times2D.git
 cd Times2D
+pip install -r requirements.txt
+```
 
-## ⚙️ Installation
+---
 
-To set up the environment and install the required packages, follow these steps:
-
-1. **Clone the Repository:**
-
-   First, clone this repository to your local machine.
-
-2. **Install Required Packages:**
-
-   It is recommended to create your own virtual environment and install the necessary packages in Python 3.10 as follows:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Usage
-
+## 🚀 Usage
 To run the models, navigate to the `scripts` folder, pick the intended `.sh` file, and execute it using the following commands:
 
 ```bash
@@ -103,24 +90,18 @@ sh ./scripts/Times2D/longTerm/Times2D_national_illness.sh
 # Weather
 sh ./scripts/Times2D/longTerm/Times2D_weather.sh
 
-<<<<<<< HEAD
-=======
 # Traffic
 sh ./scripts/Times2D/longTerm/Times2D_traffic.sh
 
->>>>>>> 2a0a41e (Save local changes before rebase)
 
 #### 🔹 Short-Term Forecasting
 
 sh ./scripts/Times2D/ShortTerm/M4.sh
-<<<<<<< HEAD
-=======
-
->>>>>>> 2a0a41e (Save local changes before rebase)
 ```
 
-## Acknowledgements
+---
 
+## 🙏 Acknowledgements
 This project makes use of code from the following open-source projects:
 
 [TimesNet](https://github.com/thuml/Time-Series-Library) - A deep learning model for time series forecasting developed by THUML @ Tsinghua University, used under the MIT License.  
@@ -130,5 +111,3 @@ This project makes use of code from the following open-source projects:
 [Informer](https://github.com/zhouhaoyi/Informer2020) - An efficient transformer model for long sequence time-series forecasting.
 
 We are grateful to the authors for their contributions to the open-source community.
-
-

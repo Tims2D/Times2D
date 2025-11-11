@@ -57,7 +57,29 @@ To set up the environment and install the required packages, follow these steps:
 To run the models, navigate to the `scripts` folder, pick the intended `.sh` file, and execute it using the following commands:
 
 ```bash
-sh ./scripts/Times2D/longTerm/etth1.sh
+#### 🔹 Long-Term Forecasting
+
+# ETT Datasets
+sh ./scripts/Times2D/longTerm/Times2D_ETTh1.sh
+sh ./scripts/Times2D/longTerm/Times2D_ETTh2.sh
+sh ./scripts/Times2D/longTerm/Times2D_ETTm1.sh
+sh ./scripts/Times2D/longTerm/Times2D_ETTm2.sh
+
+# Exchange Rate
+sh ./scripts/Times2D/longTerm/Times2D_exchange_rate.sh
+
+# Solar Energy
+sh ./scripts/Times2D/longTerm/Times2D_solar.sh
+
+# National Illness
+sh ./scripts/Times2D/longTerm/Times2D_national_illness.sh
+
+# Weather
+sh ./scripts/Times2D/longTerm/Times2D_weather.sh
+
+
+#### 🔹 Short-Term Forecasting
+
 sh ./scripts/Times2D/ShortTerm/M4.sh
 ```
 

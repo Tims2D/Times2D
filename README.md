@@ -57,8 +57,8 @@ To set up the environment and install the required packages, follow these steps:
 To run the models, navigate to the `scripts` folder, pick the intended `.sh` file, and execute it using the following commands:
 
 ```bash
-sh ./scripts/Tims2D/longTerm/etth1.sh
-sh ./scripts/Tims2D/ShortTerm/M4.sh
+sh ./scripts/Times2D/longTerm/etth1.sh
+sh ./scripts/Times2D/ShortTerm/M4.sh
 ```
 
 ## Acknowledgements

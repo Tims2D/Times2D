@@ -1,0 +1,10 @@
+logs/
+results/
+test_results/
+dataset/
+m4_results/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.DS_Store

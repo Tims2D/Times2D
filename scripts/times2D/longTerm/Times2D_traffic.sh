@@ -48,7 +48,7 @@ for seq_len in "${seq_len_list[@]}"; do
     echo "Running ${data_name} with seq_len=${seq_len}, pred_len=${pred_len} ..."
 
     # Run experiment and save log inside seq_len folder
-    python -u arguments.py \
+    python -u run.py \
       --random_seed $random_seed \
       --task_name $task_name \
       --model_id ${model_name}_${data_name}_seq${seq_len}_pred${pred_len} \
